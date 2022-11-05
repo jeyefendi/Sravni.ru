@@ -1,0 +1,17 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feed {
+  @include flex-center();
+  width: 100vw;
+  flex-direction: column;
+}
+
+.refresh {
+  position: absolute;
+  top: 2vh;
+  right: 4vw;
+}

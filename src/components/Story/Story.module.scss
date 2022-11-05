@@ -1,0 +1,26 @@
+.story {
+  padding: 2vh 4vw;
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .subtitle {
+    display: flex;
+    gap: 2vw;
+    margin-top: 2vh;
+  }
+}
+
+hr {
+  width: 100vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .story {
+    padding: 1vh 4vw;
+    .subtitle {
+      gap: 4vw;
+    }
+  }
+}
