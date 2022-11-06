@@ -5,12 +5,12 @@ import { getArticles } from '../../services/api';
 
 
 const FeedPage = () => {
-    const { isLoading, isRefetching, data, isError, error, refetch } = useQuery(
-        'storyIds',
+    const { isLoading, isRefetching, data, isError, error } = useQuery(
+        'Articles',
         getArticles,
         {
-            staleTime: 60000,
-            refetchInterval: 60000,
+            staleTime: 600000,
+            refetchInterval: 600000,
             refetchIntervalInBackground: true,
         },
     );
@@ -26,13 +26,10 @@ const FeedPage = () => {
     return (
         <>
             <main className={styles.feed}>
-                {data.map((storyId) => (
-                    <Story key={storyId} storyId={storyId}/>
-                ))}
+                {data.articles.map(article => 
+                    <Story article={article}/>
+                )}
             </main>
-            <button onClick={async () => await refetch()} className={styles.refresh}>
-                <img src="/refresh.png" alt="Refetch" className="w-16"/>
-            </button>
         </>
     );
 };
