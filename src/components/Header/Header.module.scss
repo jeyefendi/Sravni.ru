@@ -1,14 +1,44 @@
-$shadow: 0px -2px 10px rgba(0, 0, 0, 0.15);
+$green: #5cb85c;
+$shadow: 0px -8px 8px -8px rgba(0, 0, 0, 0.3);
 
-.header{
-    display: flex;
-    justify-content: flex-start;
-    box-shadow: $shadow;
+.header {
+  display: grid;
+  box-shadow: $shadow;
 }
 
-.logo {
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5vh 3vw;
+  .logo {
     display: flex;
     justify-content: flex-start;
     width: 4em;
-    margin: 2vh 4vw;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+}
+
+.banner {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: $green;
+  color: #fff;
+  line-height: 1.5;
+  h1 {
+    text-shadow: 0px 1px 3px rgb(0 0 0 / 30%);
+    font-weight: 700 !important;
+    text-align: center;
+    font-size: 3.5rem;
+    padding-bottom: 0.5rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
 }
