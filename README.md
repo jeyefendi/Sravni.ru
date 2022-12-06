@@ -1,4 +1,6 @@
-# DEPLOY <br> [NETLIFY](https://sravni-ru.netlify.app/) | [VERCEL](https://sravni-ru.vercel.app/)
+## Deploy
+
+<p float="left"><a href="https://sravni-ru.vercel.app/"><img src="https://www.p99conf.io/wp-content/uploads/2022/06/vercel.png" alt="Vercel" height="32" width="128"></a> <img src="https://github.com/jeyefendi/assets/blob/main/space.png?raw=true" width="32" height="32"/> <a href="https://sravni-ru.netlify.app/"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Netlify_logo.svg" alt="Netlify" height="32" width="128"></a></p>
 
 # Getting Started with Create React App
 
